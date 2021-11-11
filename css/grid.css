@@ -1,0 +1,43 @@
+.continer {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 100px;
+    gap: 20px;
+    grid-template-areas:
+     "header header header"
+     "sidbar content-1 content-1"
+     "sidbar content-2 content-3"
+     "footer footer footer" ;
+   margin: 20px auto;
+   text-align: center;
+    height: 90vh;
+}
+.header {
+ grid-area: header;
+ background-color: rgb(121, 121, 233);
+}
+.sidbar {
+ grid-area: sidbar;
+ background-color: rgb(121, 233, 155);
+
+}
+.content-1 {
+ grid-area: content-1;
+ background-color: rgb(226, 233, 121);
+
+}
+.content-2 {
+ grid-area: content-2;
+ background-color: rgb(121, 201, 233);
+
+}
+.content-3 {
+ grid-area: content-3;
+ background-color: rgb(162, 233, 121);
+
+}
+.footer {
+ grid-area: footer;
+ background-color: rgb(233, 121, 145);
+
+}
